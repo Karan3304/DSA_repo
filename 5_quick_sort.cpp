@@ -5,7 +5,7 @@ using namespace std;
 // Partition function
 int partition(vector<int> &arr, int low, int high)
 {
-    int pivot = arr[low];   // First element as pivot
+    int pivot = arr[low]; // First element as pivot
     int i = low;
     int j = high;
 
@@ -35,7 +35,6 @@ void quickSort(vector<int> &arr, int low, int high)
     if (low < high)
     {
         int pivotIndex = partition(arr, low, high);
-
         quickSort(arr, low, pivotIndex - 1);
         quickSort(arr, pivotIndex + 1, high);
     }
